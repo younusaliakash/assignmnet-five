@@ -1,1 +1,85 @@
-# assignmnet-five
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background-color: #EDD263;
+}
+.nav-title{
+    color: #3B2D64 !important;
+    font-weight: 700;
+}
+.nav-item{
+    margin: 0 0 15px 15px;
+    font-weight: 600;
+}
+.search-area{
+    width: 400px;
+    margin: 0 auto;
+}
+#search-btn{
+    background-color: #3B2D64 !important ;
+}
+#search-result{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.food-view-card{
+    width: 250px;
+}
+.food-detalis-card{
+    width: 380px;
+}
+.food-view-card, .food-detalis-card{
+    background-color: white;
+    margin:20px 5px 20px 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.food-view-card img{
+    width: 250px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.food-detalis-card img{
+    width: 380px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+h5, h3{
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-weight: 700;
+}
+h4{
+    margin-left: 30px;
+}
+.Ingredient-item{
+    list-style: none;
+    padding-bottom: 30px;
+    color: #3B2D64;
+}
+#food-details{
+    width: 380px;
+    margin:0 auto;
+}
+.not-found-message{
+    background-color: white;
+    width: 600px;
+    border-radius: 15px;
+    margin: 50px auto;
+    text-align: center;
+    color: #3B2D64;
+    font-weight: 600;
+}
+.alert-icon{
+    font-size: 80px;
+    color: #3B2D64;
+    margin: 15px 0 5px 0;
+}
+.not-found-message > p{
+    padding-bottom: 15px;
+}
+#alert{
+    display: none;
+}

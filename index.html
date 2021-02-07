@@ -1,1 +1,76 @@
-# assignmnet-five
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--CSS style file-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!--Navigation start-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-transperant">
+                    <div class="container-fluid">
+                      <a class="navbar-brand nav-title" href="#">Cooking Master</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Recipes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <!--Navigation End-->
+            </nav>
+        </header>
+        <main>
+            <!--search input  & button start-->
+            <div class="search-area">
+                <div class="input-group mb-3">
+                    <input type="text" id="search-input" class="form-control" placeholder=" Seach for Meal..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" onclick="getResult()" id="search-btn">Search</button>
+                  </div>
+            </div>
+            <!--search input  & button end-->
+            <!--search result & food details section-->
+            <div id="food-details" class="details">
+            </div>
+            <div id="search-result" class="result-area">
+            </div>
+            <div id="alert" class="not-found-alert">
+                <div class="not-found-message">
+                    <i class="fas fa-question-circle alert-icon"></i>
+                    <h1>No Result Found!</h1>
+                    <p>We've Searched lot of Meals. <br> We didn't find any Meal for your Search.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    
+
+    <!--JS File-->
+    <script src="./app.js"></script>
+    <!--font awesome kit-->
+    <script src="https://kit.fontawesome.com/2ac668210f.js" crossorigin="anonymous"></script>
+</body>
+</html>
